@@ -50,7 +50,7 @@
         "custom_liquid_gAaUw4": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n\n<span style=\"font-weight: bold;\">💧 Deep Hydration Boost</span> – Infuses skin with long-lasting moisture for a plump, refreshed look.<br><br>\n\n<span style=\"font-weight: bold;\">✨ Collagen + Niacinamide</span> – Helps improve skin elasticity while brightening and evening out tone.<br><br>\n\n<span style=\"font-weight: bold;\">🧴 Lightweight Jelly Texture</span> – Absorbs quickly without feeling greasy or heavy on the skin.<br><br>\n\n<span style=\"font-weight: bold;\">🌿 Skin Barrier Support</span> – Strengthens and protects your skin for a healthy, glowing finish.\n\n</div>"
+            "custom_liquid": "{% case product.handle %}\n{% when 'mini-wireless-hair-straightener' %}\n<div style=\"padding: 16px 20px; text-align: left; background-color: #FCE4EC; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6; color: #1A1A1A;\">\n<span style=\"font-weight: bold;\">⚡ 30-Second Heat-Up</span> – Ready to style before your coffee is poured.<br><br>\n<span style=\"font-weight: bold;\">✈️ Pocket-Sized Travel</span> – Slips into any bag. No cords, no outlets needed.<br><br>\n<span style=\"font-weight: bold;\">🛡️ Gentle Even Heat</span> – Protects strands from damage as it smooths.<br><br>\n<span style=\"font-weight: bold;\">💕 USB Rechargeable</span> – One charge powers multiple styling sessions.\n</div>\n{% when 'make-up-brush-cleaner' %}\n<div style=\"padding: 16px 20px; text-align: left; background-color: #FCE4EC; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6; color: #1A1A1A;\">\n<span style=\"font-weight: bold;\">⏱️ 60-Second Deep Clean</span> – Pristine brushes without the sink-session ritual.<br><br>\n<span style=\"font-weight: bold;\">🔄 Fits Every Brush</span> – Silicone holders grip detail liners to fluffy powder brushes.<br><br>\n<span style=\"font-weight: bold;\">🌸 USB Rechargeable</span> – Cordless cleaning, anywhere on your vanity.<br><br>\n<span style=\"font-weight: bold;\">✨ Hygienic Spin</span> – Pulls out makeup, oils, and bacteria in seconds.\n</div>\n{% endcase %}"
           }
         },
         "variant_picker": {
@@ -94,7 +94,6 @@
         "buy_buttons",
         "custom_liquid_dAC7ic"
       ],
-      "disabled": true,
       "settings": {
         "enable_sticky_add_to_cart": true,
         "show_taxes_included": false,
