@@ -18,26 +18,15 @@
           "type": "text",
           "settings": {
             "icon": "none",
-            "text": "Choose your free item by ordering above $50",
+            "text": "FREE DELIVERY ALL OVER LEBANON",
             "link": "",
             "color_bg": "#3f72e5",
-            "color_text": "#ffffff"
-          }
-        },
-        "888fc484-50e5-4566-bad6-41e835d00d5f": {
-          "type": "text",
-          "settings": {
-            "icon": "none",
-            "text": "Free Delivery All Over Lebanon",
-            "link": "",
-            "color_bg": "#b88933",
             "color_text": "#ffffff"
           }
         }
       },
       "block_order": [
-        "text_RyX9Gt",
-        "888fc484-50e5-4566-bad6-41e835d00d5f"
+        "text_RyX9Gt"
       ],
       "custom_css": [
         "* {background-color: #b88933;}"
