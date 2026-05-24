@@ -39,7 +39,6 @@
         "text_RyX9Gt",
         "888fc484-50e5-4566-bad6-41e835d00d5f"
       ],
-      "disabled": true,
       "custom_css": [
         "* {background-color: #b88933;}"
       ],
@@ -66,7 +65,6 @@
     },
     "header": {
       "type": "header",
-      "disabled": true,
       "settings": {
         "sticky_header": true,
         "logo_height_range": 72,
