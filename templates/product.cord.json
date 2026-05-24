@@ -1,0 +1,519 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "spacer_H6QL8Q": {
+      "type": "spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_mobile": 50,
+        "spacer_desktop": 100,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {}
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "custom_liquid_aj4Mk6": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>\n  .star-review-wrapper {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    flex-shrink: 0;\n  }\n\n  .star-icons svg {\n    width: 20px;\n    height: 20px;\n    fill: #B88933; /* Your deep red color */\n  }\n\n  .review-text {\n    font-size: 16px;\n    font-weight: 500;\n    color: #333;\n    white-space: nowrap;\n  }\n\n  @media (max-width: 480px) {\n    .star-review-wrapper {\n      flex-direction: row;\n      justify-content: center;\n    }\n\n    .review-text {\n      font-size: 15px;\n    }\n  }\n</style>\n\n<div class=\"star-review-wrapper\">\n  <div class=\"star-icons\">\n    <!-- 5 Rounded Stars -->\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n  </div>\n  <div class=\"review-text\">\n    <strong>5</strong> by <strong>194+</strong> Customers\n  </div>\n</div>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "show_products_rating": true,
+            "show_products_rating_average": false,
+            "show_custom_badges": false
+          }
+        },
+        "custom_liquid_BKzFYK": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<section class=\"sale-timer\" aria-label=\"Sale countdown timer\">\n  <style>\n    .sale-timer{\n      width:100%;\n      padding:22px 12px;\n      display:flex;\n      justify-content:center;\n      background:##CB572A;\n      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;\n    }\n    .sale-timer__wrap{\n      text-align:center;\n    }\n    .sale-timer__label{\n      font-size:24px;\n      font-weight:500;\n      color:#111;\n      margin:0 0 14px 0;\n      line-height:1.1;\n    }\n\n    .sale-timer__row{\n      display:flex;\n      align-items:center;\n      justify-content:center;\n      gap:10px;\n    }\n\n    .sale-timer__box{\n      width:88px;\n      height:68px;\n      background:#B88933;\n      color:#fff;\n      border-radius:6px;\n      display:flex;\n      align-items:center;\n      justify-content:center;\n      font-size:34px;\n      font-weight:700;\n      letter-spacing:1px;\n      font-variant-numeric: tabular-nums;\n    }\n\n    .sale-timer__colon{\n      font-size:32px;\n      font-weight:700;\n      color:#ff2a2a;\n      line-height:1;\n      transform: translateY(-1px);\n      user-select:none;\n    }\n\n    @media (max-width:420px){\n      .sale-timer__label{ font-size:20px; }\n      .sale-timer__box{ width:72px; height:58px; font-size:30px; }\n      .sale-timer__colon{ font-size:28px; }\n      .sale-timer__row{ gap:8px; }\n    }\n  </style>\n\n  <div class=\"sale-timer__wrap\">\n    <div class=\"sale-timer__label\">Hurry! Sale ends in</div>\n\n    <div class=\"sale-timer__row\" role=\"timer\" aria-live=\"polite\">\n      <div class=\"sale-timer__box\" id=\"st-hours\">00</div>\n      <div class=\"sale-timer__colon\">:</div>\n      <div class=\"sale-timer__box\" id=\"st-mins\">00</div>\n      <div class=\"sale-timer__colon\">:</div>\n      <div class=\"sale-timer__box\" id=\"st-secs\">00</div>\n    </div>\n  </div>\n\n  <script>\n    (function () {\n      const durationHours = 12; // change if needed\n      const endAt = Date.now() + durationHours * 60 * 60 * 1000;\n\n      const h = document.getElementById(\"st-hours\");\n      const m = document.getElementById(\"st-mins\");\n      const s = document.getElementById(\"st-secs\");\n\n      const pad = n => String(n).padStart(2, \"0\");\n\n      function update(){\n        let diff = endAt - Date.now();\n        if(diff < 0) diff = 0;\n\n        const total = Math.floor(diff / 1000);\n        h.textContent = pad(Math.floor(total / 3600));\n        m.textContent = pad(Math.floor((total % 3600) / 60));\n        s.textContent = pad(total % 60);\n\n        if(diff === 0) clearInterval(timer);\n      }\n\n      update();\n      const timer = setInterval(update, 1000);\n    })();\n  </script>\n</section>"
+          }
+        },
+        "custom_liquid_gAaUw4": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% case product.handle %}\n{% when 'mini-wireless-hair-straightener' %}\n<div style=\"padding: 16px 20px; text-align: left; background-color: #FCE4EC; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6; color: #1A1A1A;\">\n<span style=\"font-weight: bold;\">⚡ 30-Second Heat-Up</span> – Ready to style before your coffee is poured.<br><br>\n<span style=\"font-weight: bold;\">✈️ Pocket-Sized Travel</span> – Slips into any bag. No cords, no outlets needed.<br><br>\n<span style=\"font-weight: bold;\">🛡️ Gentle Even Heat</span> – Protects strands from damage as it smooths.<br><br>\n<span style=\"font-weight: bold;\">💕 USB Rechargeable</span> – One charge powers multiple styling sessions.\n</div>\n{% when 'make-up-brush-cleaner' %}\n<div style=\"padding: 16px 20px; text-align: left; background-color: #FCE4EC; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6; color: #1A1A1A;\">\n<span style=\"font-weight: bold;\">⏱️ 60-Second Deep Clean</span> – Pristine brushes without the sink-session ritual.<br><br>\n<span style=\"font-weight: bold;\">🔄 Fits Every Brush</span> – Silicone holders grip detail liners to fluffy powder brushes.<br><br>\n<span style=\"font-weight: bold;\">🌸 USB Rechargeable</span> – Cordless cleaning, anywhere on your vanity.<br><br>\n<span style=\"font-weight: bold;\">✨ Hygienic Spin</span> – Pulls out makeup, oils, and bacteria in seconds.\n</div>\n{% endcase %}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_picker": true,
+            "color_picker_use_variants": false,
+            "variant_is_disabled": true,
+            "sizing_guide_variant": "Size",
+            "sizing_guide_text": "",
+            "sizing_guide_icon": "ruler",
+            "sizing_guide_page": ""
+          }
+        },
+        "quantity": {
+          "type": "quantity",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "custom_liquid_dAC7ic": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f5f5f5; font-size: 15px; border-radius: 13px; margin-top: 12px; margin-bottom: 12px; display: flex; align-items: center;\"> \n    <span class=\"em\" style=\"margin-right: 8px;\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewBox=\"0 -960 960 960\" width=\"24px\" fill=\"#545454\">\n            <path d=\"M240-160q-50 0-85-35t-35-85H40v-440q0-33 23.5-56.5T120-800h560v160h120l120 160v200h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T280-280q0-17-11.5-28.5T240-320q-17 0-28.5 11.5T200-280q0 17 11.5 28.5T240-240ZM120-360h32q17-18 39-29t49-11q27 0 49 11t39 29h272v-360H120v360Zm600 120q17 0 28.5-11.5T760-280q0-17-11.5-28.5T720-320q-17 0-28.5 11.5T680-280q0 17 11.5 28.5T720-240Zm-40-200h170l-90-120h-80v120ZM360-540Z\"/>\n        </svg> \n    </span>\n    <span>Order now to receive by <span id=\"delivery-dates\" style=\"font-weight: bold;\"></span></span>\n</div>\n\n<script>\n    document.addEventListener('DOMContentLoaded', function() {\n        var currentDate = new Date();\n        var minDeliveryDate = new Date();\n        minDeliveryDate.setDate(currentDate.getDate() + 2);\n\n        var maxDeliveryDate = new Date();\n        maxDeliveryDate.setDate(currentDate.getDate() + 3);\n\n        var formatDate = function(date) {\n            var dayNames = [\"Sunday\", \"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\"];\n            var monthNames = [\"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n                \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"\n            ];\n            var day = date.getDate();\n            var month = monthNames[date.getMonth()];\n            var weekday = dayNames[date.getDay()];\n            return weekday + \", \" + month + \" \" + day;\n        };\n\n        var deliverySpan = document.getElementById('delivery-dates');\n        deliverySpan.textContent = formatDate(minDeliveryDate) + ' – ' + formatDate(maxDeliveryDate);\n    });\n</script>"
+          }
+        }
+      },
+      "block_order": [
+        "custom_liquid_aj4Mk6",
+        "title",
+        "custom_liquid_BKzFYK",
+        "custom_liquid_gAaUw4",
+        "variant_picker",
+        "quantity",
+        "buy_buttons",
+        "custom_liquid_dAC7ic"
+      ],
+      "settings": {
+        "enable_sticky_add_to_cart": true,
+        "show_taxes_included": false,
+        "thumbnail_position": "left",
+        "media_aspect_ratio": "adapt",
+        "display_captions": false,
+        "hide_variants": false,
+        "lightbox": false,
+        "enable_video_looping": false
+      }
+    },
+    "1662552569cce2536d": {
+      "type": "spacer",
+      "disabled": true,
+      "settings": {
+        "spacer_mobile": 60,
+        "spacer_desktop": 80,
+        "border_separator": true,
+        "border_separator_full": false
+      }
+    },
+    "scrolling_text_ddLM8z": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text_MYr46j": {
+          "type": "text",
+          "settings": {
+            "text": "Hydrated skin is always in.",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "text_9wNYwF": {
+          "type": "text",
+          "settings": {
+            "text": "Hydrated skin is always in.",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "text_awjEGW": {
+          "type": "text",
+          "settings": {
+            "text": "Hydrated skin is always in.",
+            "link": "",
+            "outline_text": false
+          }
+        }
+      },
+      "block_order": [
+        "text_MYr46j",
+        "text_9wNYwF",
+        "text_awjEGW"
+      ],
+      "disabled": true,
+      "name": "Scrolling text",
+      "settings": {
+        "height": "height-auto",
+        "full_width": true,
+        "direction": "left",
+        "speed": "20s",
+        "rotation": 0,
+        "negative_rotation": false,
+        "font_family": "heading",
+        "text_size": 24,
+        "text_uppercase": false,
+        "image_size": "large",
+        "color_bg": "#b88933",
+        "color_text": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "image_with_text_jfqMYG": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_B9AAif": {
+          "type": "heading",
+          "settings": {
+            "text": "Glow That Feels Like Skincare, Looks Like Confidence",
+            "marker_style": "style1",
+            "heading_size": "h3",
+            "marker_color": "#fd6262"
+          }
+        },
+        "text_8KkhpQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Give your skin the hydration it craves with a lightweight jelly cream that absorbs fast and works deep. Infused with collagen and niacinamide, it helps improve elasticity while leaving your skin smooth, plump, and naturally radiant.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_B9AAif",
+        "text_8KkhpQ"
+      ],
+      "disabled": true,
+      "name": "Image with text",
+      "settings": {
+        "use_video": false,
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "full_width": false,
+        "layout": "image_first",
+        "content_position": "text-left",
+        "column_spacing": "medium",
+        "color_bg": "#ffffff",
+        "color_text": "#2c2d2e",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "scrolling_text_zgie3J": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text_hKMW3X": {
+          "type": "text",
+          "settings": {
+            "text": "Glow starts with care",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "text_V77YYj": {
+          "type": "text",
+          "settings": {
+            "text": "Glow starts with care",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "text_neTEtb": {
+          "type": "text",
+          "settings": {
+            "text": "Glow starts with care",
+            "link": "",
+            "outline_text": false
+          }
+        }
+      },
+      "block_order": [
+        "text_hKMW3X",
+        "text_V77YYj",
+        "text_neTEtb"
+      ],
+      "disabled": true,
+      "name": "Scrolling text",
+      "settings": {
+        "height": "height-auto",
+        "full_width": true,
+        "direction": "left",
+        "speed": "20s",
+        "rotation": 0,
+        "negative_rotation": false,
+        "font_family": "heading",
+        "text_size": 24,
+        "text_uppercase": false,
+        "image_size": "large",
+        "color_bg": "#b88933",
+        "color_text": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "image_with_text_WcURLg": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_trp8U4": {
+          "type": "heading",
+          "settings": {
+            "text": "Everyday Hydration, Elevated",
+            "marker_style": "style1",
+            "heading_size": "h3",
+            "marker_color": "#fd6262"
+          }
+        },
+        "text_A8fd7K": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>Designed for daily use, this cream strengthens your skin barrier while delivering long-lasting moisture without heaviness. Perfect for all skin types, it keeps your skin soft, balanced, and glowing all day.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_trp8U4",
+        "text_A8fd7K"
+      ],
+      "disabled": true,
+      "name": "Image with text",
+      "settings": {
+        "use_video": false,
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "full_width": false,
+        "layout": "image_first",
+        "content_position": "text-left",
+        "column_spacing": "medium",
+        "color_bg": "#ffffff",
+        "color_text": "#2c2d2e",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "17765310812b7f3734": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c6f60aa_f9dixT": {
+          "type": "ai_gen_block_c6f60aa",
+          "disabled": true,
+          "settings": {
+            "heading": "Why choose us?",
+            "heading_alignment": "center",
+            "heading_size": 32,
+            "heading_color": "#1a1c1d",
+            "feature_column_label": "Feature",
+            "us_column_label": "Us",
+            "others_column_label": "Others",
+            "feature_1": "Deep Hydration",
+            "feature_1_us": "check",
+            "feature_1_others": "cross",
+            "feature_2": "Collagen Support",
+            "feature_2_us": "check",
+            "feature_2_others": "cross",
+            "feature_3": "Lightweight Formula",
+            "feature_3_us": "check",
+            "feature_3_others": "cross",
+            "feature_4": "Suitable for All Skin Types",
+            "feature_4_us": "check",
+            "feature_4_others": "cross",
+            "feature_5": "",
+            "feature_5_us": "check",
+            "feature_5_others": "cross",
+            "feature_6": "",
+            "feature_6_us": "check",
+            "feature_6_others": "cross",
+            "feature_7": "",
+            "feature_7_us": "check",
+            "feature_7_others": "cross",
+            "feature_8": "",
+            "feature_8_us": "check",
+            "feature_8_others": "cross",
+            "desktop_width_percent": 100,
+            "border_radius": 8,
+            "icon_size": 24,
+            "table_bg_color": "#ffffff",
+            "header_bg_color": "#f5f5f5",
+            "header_text_color": "#1a1c1d",
+            "header_font_size": 16,
+            "text_color": "#2c2d2e",
+            "text_size": 14,
+            "border_color": "#e0e0e0",
+            "row_alt_bg_color": "#fafafa",
+            "highlight_bg_color": "#f0f8ff",
+            "checkmark_color": "#00a651",
+            "cross_color": "#d82c0d"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c6f60aa_f9dixT"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "collapsible_content_GeM6CX": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_tab_pHDUVB": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Is this suitable for all skin types?",
+            "open": false,
+            "content": "<p>Yes, it’s designed to work for all skin types, including dry, oily, and sensitive skin.</p>",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "collapsible_tab_8x3EF7": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "What does it help with?",
+            "open": false,
+            "content": "<p>It helps hydrate the skin, improve elasticity, and give a smoother, more radiant look.</p>",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "collapsible_tab_XfjRHc": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How do I use it?",
+            "open": false,
+            "content": "<p>Apply a small amount to clean skin and gently massage until fully absorbed. Use daily for best results.</p>",
+            "page": "",
+            "custom_liquid": ""
+          }
+        },
+        "collapsible_tab_LTdPnU": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Can I use it day and night?",
+            "open": false,
+            "content": "<p>Yes, it’s lightweight enough for daytime and nourishing enough for nighttime use.</p>",
+            "page": "",
+            "custom_liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab_pHDUVB",
+        "collapsible_tab_8x3EF7",
+        "collapsible_tab_XfjRHc",
+        "collapsible_tab_LTdPnU"
+      ],
+      "disabled": true,
+      "name": "Collapsible content",
+      "settings": {
+        "heading": "fAQ'S",
+        "marker_style": "style1",
+        "description": "",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_heading": "#1a1c1d",
+        "marker_color": "#fd6262",
+        "color_text": "#2c2d2e",
+        "color_links": "#2c2d2e",
+        "color_border": "#dadce0",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "17765316853e0e4a41": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {}
+    },
+    "text_with_icons_ELbXtb": {
+      "type": "text-with-icons",
+      "blocks": {
+        "icon_JYMHt7": {
+          "type": "icon",
+          "settings": {
+            "icon": "truck",
+            "heading": "Delivery All Over Lebanon",
+            "text": ""
+          }
+        },
+        "icon_xPca9q": {
+          "type": "icon",
+          "settings": {
+            "icon": "chat_bubble",
+            "heading": "24/7 Support",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_JYMHt7",
+        "icon_xPca9q"
+      ],
+      "disabled": true,
+      "name": "Text with icons",
+      "settings": {
+        "text_alignment": "left",
+        "icon_position": "left",
+        "icon_size": "large",
+        "heading_size": "large",
+        "mobile_swipe": true,
+        "color_bg": "rgba(0,0,0,0)",
+        "color_heading": "#1a1c1d",
+        "color_text": "#2c2d2e",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "description": "<p>Combine your style with these products</p>",
+        "mobile_swipe": true,
+        "product_limit": 4,
+        "columns_desktop": 4,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "custom_liquid_pCABPd": {
+      "type": "custom-liquid",
+      "name": "Custom liquid",
+      "settings": {
+        "custom_liquid": "<style>\n  .glowly-product * { box-sizing: border-box; }\n  .glowly-product { font-family: 'Inter', system-ui, sans-serif; color: #1A1A1A; line-height: 1.6; }\n  .glowly-product-container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }\n\n  .glowly-product .marquee { background: #1A1A1A; overflow: hidden; padding: 18px 0; white-space: nowrap; }\n  .glowly-product .marquee-track { display: inline-block; animation: glowlyScroll 25s linear infinite; color: #FFFFFF; font-size: 13px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; }\n  .glowly-product .marquee-track span { margin: 0 30px; }\n  @keyframes glowlyScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }\n\n  .glowly-product .trust { padding: 60px 24px; background: #FCE4EC; }\n  .glowly-product .trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; text-align: center; }\n  .glowly-product .trust-item .icon { font-size: 32px; margin-bottom: 12px; }\n  .glowly-product .trust-item h4 { font-family: 'Playfair Display', Georgia, serif; font-size: 16px; margin: 0 0 6px 0; font-weight: 500; }\n  .glowly-product .trust-item p { font-size: 13px; color: #3D3D3D; margin: 0; }\n\n  .glowly-product .benefit { padding: 100px 24px; }\n  .glowly-product .benefit-pink { background: #FCE4EC; }\n  .glowly-product .benefit-white { background: #FFFFFF; }\n  .glowly-product .benefit-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; max-width: 1100px; margin: 0 auto; }\n  .glowly-product .benefit-inner.reverse { direction: rtl; }\n  .glowly-product .benefit-inner.reverse > * { direction: ltr; }\n  .glowly-product .benefit img { width: 100%; height: auto; border-radius: 12px; display: block; }\n  .glowly-product .benefit .caption { color: #E8A5B8; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; font-weight: 600; margin-bottom: 12px; }\n  .glowly-product .benefit h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 36px; line-height: 1.2; margin: 0 0 20px 0; font-weight: 400; }\n  .glowly-product .benefit p { font-size: 16px; color: #3D3D3D; line-height: 1.7; margin: 0 0 16px 0; }\n\n  .glowly-product .compare { padding: 100px 24px; background: #FFFFFF; }\n  .glowly-product .compare h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 36px; text-align: center; margin: 0 0 12px 0; font-weight: 400; }\n  .glowly-product .compare-sub { text-align: center; color: #888; font-style: italic; margin-bottom: 40px; }\n  .glowly-product .compare table { width: 100%; max-width: 800px; margin: 0 auto; border-collapse: collapse; }\n  .glowly-product .compare th, .glowly-product .compare td { padding: 16px; text-align: center; border-bottom: 1px solid #F5D5DD; }\n  .glowly-product .compare th { background: #FCE4EC; font-family: 'Playfair Display', Georgia, serif; font-size: 16px; font-weight: 500; }\n  .glowly-product .compare th:first-child, .glowly-product .compare td:first-child { text-align: left; }\n  .glowly-product .compare .yes { color: #4CAF50; font-size: 20px; font-weight: 700; }\n  .glowly-product .compare .no { color: #C9A0A0; font-size: 18px; font-weight: 700; }\n\n  .glowly-product .howto { padding: 100px 24px; background: #FCE4EC; }\n  .glowly-product .howto h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 36px; text-align: center; margin: 0 0 50px 0; font-weight: 400; }\n  .glowly-product .howto-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; max-width: 1000px; margin: 0 auto; }\n  .glowly-product .howto-step { text-align: center; }\n  .glowly-product .howto-step .num { font-family: 'Playfair Display', Georgia, serif; font-size: 48px; color: #E8A5B8; line-height: 1; margin-bottom: 12px; font-weight: 400; }\n  .glowly-product .howto-step h4 { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; margin: 0 0 8px 0; font-weight: 500; }\n  .glowly-product .howto-step p { font-size: 14px; color: #3D3D3D; line-height: 1.6; margin: 0; }\n\n  .glowly-product .reviews { padding: 100px 24px; background: #FFFFFF; }\n  .glowly-product .reviews h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 36px; text-align: center; margin: 0 0 12px 0; font-weight: 400; }\n  .glowly-product .reviews-sub { text-align: center; color: #888; font-style: italic; margin-bottom: 40px; }\n  .glowly-product .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; }\n  .glowly-product .review { background: #FCE4EC; padding: 28px; border-radius: 12px; }\n  .glowly-product .review .stars { color: #E8A5B8; margin-bottom: 12px; font-size: 14px; letter-spacing: 2px; }\n  .glowly-product .review p { font-size: 14px; color: #3D3D3D; line-height: 1.7; margin: 0 0 16px 0; font-style: italic; }\n  .glowly-product .review .author { font-size: 13px; font-weight: 600; color: #1A1A1A; }\n\n  .glowly-product .faq { padding: 100px 24px; background: #FFFFFF; }\n  .glowly-product .faq-inner { max-width: 800px; margin: 0 auto; padding: 0 24px; }\n  .glowly-product .faq h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 36px; text-align: center; margin: 0 0 12px 0; font-weight: 400; }\n  .glowly-product .faq-sub { text-align: center; color: #888; font-style: italic; margin-bottom: 40px; }\n  .glowly-product .faq details { background: #FCE4EC; border-radius: 8px; padding: 20px 24px; margin-bottom: 12px; cursor: pointer; transition: 0.2s; }\n  .glowly-product .faq details[open] { background: #F5D5DD; }\n  .glowly-product .faq summary { font-weight: 600; color: #1A1A1A; font-size: 15px; outline: none; list-style: none; position: relative; padding-right: 30px; }\n  .glowly-product .faq summary::-webkit-details-marker { display: none; }\n  .glowly-product .faq summary::after { content: '+'; position: absolute; right: 0; top: 0; font-size: 22px; color: #1A1A1A; }\n  .glowly-product .faq details[open] summary::after { content: '−'; }\n  .glowly-product .faq p { margin: 14px 0 0 0; color: #3D3D3D; line-height: 1.7; font-size: 14px; }\n\n  .glowly-product .final { background: #1A1A1A; color: #FFFFFF; padding: 100px 24px; text-align: center; }\n  .glowly-product .final h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 42px; margin: 0 0 16px 0; font-weight: 400; color: #FFFFFF; }\n  .glowly-product .final p { font-size: 17px; color: #FCE4EC; margin: 0 auto 32px auto; max-width: 500px; }\n  .glowly-product .final-form { margin: 0; }\n  .glowly-product .final-form button { display: inline-block; background: #FCE4EC; color: #1A1A1A; padding: 18px 48px; border: 2px solid #FCE4EC; font-weight: 500; letter-spacing: 2px; font-size: 13px; text-transform: uppercase; cursor: pointer; transition: 0.2s; font-family: inherit; }\n  .glowly-product .final-form button:hover { background: transparent; color: #FCE4EC; }\n  .glowly-product .final-note { font-size: 13px; color: #FCE4EC; margin-top: 16px; opacity: 0.7; letter-spacing: 1px; }\n\n  @media (max-width: 768px) {\n    .glowly-product .benefit { padding: 60px 20px; }\n    .glowly-product .benefit-inner { grid-template-columns: 1fr; gap: 32px; }\n    .glowly-product .benefit-inner.reverse { direction: ltr; }\n    .glowly-product .benefit h2 { font-size: 28px; }\n    .glowly-product .compare th, .glowly-product .compare td { padding: 10px; font-size: 13px; }\n    .glowly-product .howto, .glowly-product .reviews, .glowly-product .faq, .glowly-product .compare { padding: 60px 20px; }\n    .glowly-product .final h2 { font-size: 32px; }\n  }\n</style>\n\n<div class=\"glowly-product\">\n\n  <!-- Marquee (shared across all products) -->\n  <div class=\"marquee\">\n    <div class=\"marquee-track\">\n      <span>✨ FREE SHIPPING OVER $40</span>\n      <span>🎀 14-DAY MONEY-BACK GUARANTEE</span>\n      <span>💕 LOVED BY 2,000+ WOMEN</span>\n      <span>🌸 USB RECHARGEABLE</span>\n      <span>✨ FREE SHIPPING OVER $40</span>\n      <span>🎀 14-DAY MONEY-BACK GUARANTEE</span>\n      <span>💕 LOVED BY 2,000+ WOMEN</span>\n      <span>🌸 USB RECHARGEABLE</span>\n    </div>\n  </div>\n\n  <!-- Trust row -->\n  <section class=\"trust\">\n    <div class=\"glowly-product-container\">\n      <div class=\"trust-grid\">\n        {% case product.handle %}\n        {% when 'mini-wireless-hair-straightener' %}\n          <div class=\"trust-item\"><div class=\"icon\">⚡</div><h4>30-Second Heat-Up</h4><p>Ready before your morning coffee.</p></div>\n          <div class=\"trust-item\"><div class=\"icon\">✈️</div><h4>Travel-Ready</h4><p>Fits in any bag. Cordless freedom.</p></div>\n          <div class=\"trust-item\"><div class=\"icon\">🛡️</div><h4>Safe for All Hair</h4><p>Even heat. No damage.</p></div>\n          <div class=\"trust-item\"><div class=\"icon\">💕</div><h4>Effortlessly Cute</h4><p>As good as it looks.</p></div>\n        {% when 'make-up-brush-cleaner' %}\n          <div class=\"trust-item\"><div class=\"icon\">⏱️</div><h4>60-Second Clean</h4><p>Pristine brushes in under a minute.</p></div>\n          <div class=\"trust-item\"><div class=\"icon\">🔄</div><h4>Fits Every Brush</h4><p>Eyeshadow to powder, all sizes.</p></div>\n          <div class=\"trust-item\"><div class=\"icon\">🌸</div><h4>USB Rechargeable</h4><p>Cordless. Clean anywhere.</p></div>\n          <div class=\"trust-item\"><div class=\"icon\">✨</div><h4>Hygienic Spin</h4><p>Removes makeup, oils, bacteria.</p></div>\n        {% endcase %}\n      </div>\n    </div>\n  </section>\n\n  <!-- Benefit 1 -->\n  <section class=\"benefit benefit-white\">\n    <div class=\"benefit-inner\">\n      <div><img src=\"{{ product.featured_image | image_url: width: 800 }}\" alt=\"{{ product.title | escape }}\"></div>\n      <div>\n        {% case product.handle %}\n        {% when 'mini-wireless-hair-straightener' %}\n          <div class=\"caption\">Sleek hair, anywhere</div>\n          <h2>From bedhead to brunch-ready in five minutes.</h2>\n          <p>The Glowly mini heats in 30 seconds and glides through your hair with even, gentle warmth. Perfect for taming flyaways, smoothing frizz, or restyling between meetings.</p>\n          <p>No more lugging a full-size flat iron in your weekender. This one slips into your purse.</p>\n        {% when 'make-up-brush-cleaner' %}\n          <div class=\"caption\">Hands-free deep clean</div>\n          <h2>Pristine brushes without the 20-minute sink session.</h2>\n          <p>Drop your brushes in, add water and a drop of cleanser, press the button. The Glowly cleaner spins each brush at salon speed — pulling out makeup buildup, oils, and bacteria in seconds.</p>\n          <p>No more hand-washing in the sink. No more brushes drying flat on a towel for two days.</p>\n        {% endcase %}\n      </div>\n    </div>\n  </section>\n\n  <!-- Benefit 2 -->\n  <section class=\"benefit benefit-pink\">\n    <div class=\"benefit-inner reverse\">\n      <div>\n        {% if product.images.size > 1 %}\n          <img src=\"{{ product.images[1] | image_url: width: 800 }}\" alt=\"{{ product.title | escape }}\">\n        {% else %}\n          <img src=\"{{ product.featured_image | image_url: width: 800 }}\" alt=\"{{ product.title | escape }}\">\n        {% endif %}\n      </div>\n      <div>\n        {% case product.handle %}\n        {% when 'mini-wireless-hair-straightener' %}\n          <div class=\"caption\">USB-rechargeable</div>\n          <h2>Charge once. Style anywhere. No outlet needed.</h2>\n          <p>A full USB charge powers multiple styling sessions — refresh your look at a coffee shop, an airport, or a hotel bathroom with the worst lighting in the world.</p>\n          <p>USB cable included. Plug into any laptop, power bank, or wall adapter.</p>\n        {% when 'make-up-brush-cleaner' %}\n          <div class=\"caption\">Built for any brush</div>\n          <h2>From slim eyeshadow detail to fluffy powder. One cleaner.</h2>\n          <p>Silicone holders flex to grip any brush handle — your tiniest liner through your fattest blush brush. Clean them one by one, or spin a few at once.</p>\n          <p>USB-rechargeable base. A single charge handles multiple full-kit cleaning sessions.</p>\n        {% endcase %}\n      </div>\n    </div>\n  </section>\n\n  <!-- Compare -->\n  <section class=\"compare\">\n    <div class=\"glowly-product-container\">\n      {% case product.handle %}\n      {% when 'mini-wireless-hair-straightener' %}\n        <h2>Glowly vs Your Old Flat Iron</h2>\n        <p class=\"compare-sub\">Five reasons this is the one that travels with you.</p>\n        <table>\n          <thead><tr><th></th><th>Glowly Mini</th><th>Old Flat Iron</th></tr></thead>\n          <tbody>\n            <tr><td>Cordless · USB rechargeable</td><td><span class=\"yes\">✓</span></td><td><span class=\"no\">✗</span></td></tr>\n            <tr><td>Fits in a purse</td><td><span class=\"yes\">✓</span></td><td><span class=\"no\">✗</span></td></tr>\n            <tr><td>30-second heat-up</td><td><span class=\"yes\">✓</span></td><td><span class=\"no\">✗</span></td></tr>\n            <tr><td>Gentle even heat</td><td><span class=\"yes\">✓</span></td><td><span class=\"no\">✗</span></td></tr>\n            <tr><td>Salon-quality finish</td><td><span class=\"yes\">✓</span></td><td><span class=\"yes\">✓</span></td></tr>\n          </tbody>\n        </table>\n      {% when 'make-up-brush-cleaner' %}\n        <h2>Glowly Cleaner vs Hand-Washing</h2>\n        <p class=\"compare-sub\">Why your brushes deserve the upgrade.</p>\n        <table>\n          <thead><tr><th></th><th>Glowly Cleaner</th><th>Hand-Washing</th></tr></thead>\n          <tbody>\n            <tr><td>Cleans full kit in under 5 min</td><td><span class=\"yes\">✓</span></td><td><span class=\"no\">✗</span></td></tr>\n            <tr><td>Removes deep buildup</td><td><span class=\"yes\">✓</span></td><td><span class=\"no\">✗</span></td></tr>\n            <tr><td>Dries brushes upright</td><td><span class=\"yes\">✓</span></td><td><span class=\"no\">✗</span></td></tr>\n            <tr><td>Hands-free</td><td><span class=\"yes\">✓</span></td><td><span class=\"no\">✗</span></td></tr>\n            <tr><td>Gentle on bristles</td><td><span class=\"yes\">✓</span></td><td><span class=\"yes\">✓</span></td></tr>\n          </tbody>\n        </table>\n      {% endcase %}\n    </div>\n  </section>\n\n  <!-- How to -->\n  <section class=\"howto\">\n    <div class=\"glowly-product-container\">\n      <h2>How to Glow ✨</h2>\n      <div class=\"howto-grid\">\n        {% case product.handle %}\n        {% when 'mini-wireless-hair-straightener' %}\n          <div class=\"howto-step\"><div class=\"num\">1</div><h4>Charge & Power On</h4><p>Plug into any USB. One full charge = multiple sessions.</p></div>\n          <div class=\"howto-step\"><div class=\"num\">2</div><h4>Wait 30 Seconds</h4><p>The indicator light tells you when it's ready.</p></div>\n          <div class=\"howto-step\"><div class=\"num\">3</div><h4>Glide & Smooth</h4><p>Work in small sections. One pass is usually enough.</p></div>\n          <div class=\"howto-step\"><div class=\"num\">4</div><h4>Slip & Go</h4><p>Cools quickly. Drop it in your bag — out the door.</p></div>\n        {% when 'make-up-brush-cleaner' %}\n          <div class=\"howto-step\"><div class=\"num\">1</div><h4>Add Water + Soap</h4><p>A few drops of brush cleanser. Fill cup to the MAX line.</p></div>\n          <div class=\"howto-step\"><div class=\"num\">2</div><h4>Attach Brush</h4><p>Snap your brush into the silicone holder.</p></div>\n          <div class=\"howto-step\"><div class=\"num\">3</div><h4>Press Power</h4><p>One-touch start. Spins clean in 60 seconds.</p></div>\n          <div class=\"howto-step\"><div class=\"num\">4</div><h4>Air Dry Upright</h4><p>Use the included rack. Ready in hours, not days.</p></div>\n        {% endcase %}\n      </div>\n    </div>\n  </section>\n\n  <!-- Reviews -->\n  <section class=\"reviews\">\n    <div class=\"glowly-product-container\">\n      <h2>Real Women. Real Glow. 💕</h2>\n      <p class=\"reviews-sub\">2,000+ happy customers and counting.</p>\n      <div class=\"reviews-grid\">\n        {% case product.handle %}\n        {% when 'mini-wireless-hair-straightener' %}\n          <div class=\"review\"><div class=\"stars\">★★★★★</div><p>\"Lives in my work bag. Quick touch-ups before meetings every morning. Game changer.\"</p><div class=\"author\">— Layla M.</div></div>\n          <div class=\"review\"><div class=\"stars\">★★★★★</div><p>\"Took it on a 10-day trip and didn't miss my full-size straightener once. So fast to heat up.\"</p><div class=\"author\">— Nour S.</div></div>\n          <div class=\"review\"><div class=\"stars\">★★★★★</div><p>\"My hair is thick and curly — I was skeptical. It handles it. Smooths flyaways perfectly.\"</p><div class=\"author\">— Yasmine K.</div></div>\n        {% when 'make-up-brush-cleaner' %}\n          <div class=\"review\"><div class=\"stars\">★★★★★</div><p>\"Used to spend Sunday afternoons washing brushes. Now I do my whole kit while I make coffee.\"</p><div class=\"author\">— Sarah L.</div></div>\n          <div class=\"review\"><div class=\"stars\">★★★★★</div><p>\"I'm a makeup artist — this cuts my cleaning time by 90%. Worth every cent.\"</p><div class=\"author\">— Rana B.</div></div>\n          <div class=\"review\"><div class=\"stars\">★★★★★</div><p>\"Fits the tiniest detail brushes my old cleaner couldn't grip. Obsessed.\"</p><div class=\"author\">— Maya T.</div></div>\n        {% endcase %}\n      </div>\n    </div>\n  </section>\n\n  <!-- FAQ -->\n  <section class=\"faq\">\n    <div class=\"faq-inner\">\n      <h2>Frequently Asked</h2>\n      <p class=\"faq-sub\">Everything you need to know before you glow.</p>\n      {% case product.handle %}\n      {% when 'mini-wireless-hair-straightener' %}\n        <details><summary>Is it really cordless?</summary><p>Yes — charge it once via USB and style anywhere. No outlets, no cords. Perfect for travel, the gym, or quick touch-ups before going out.</p></details>\n        <details><summary>How long does the battery last?</summary><p>A full charge powers multiple styling sessions. Plug it back in with the included USB cable when it runs low.</p></details>\n        <details><summary>Will it damage my hair?</summary><p>Designed with even heat distribution to be gentle on hair — far less harsh than traditional flat irons. Glide through small sections for the smoothest, safest results.</p></details>\n        <details><summary>Does it work on all hair types?</summary><p>Yes — works on all hair types and lengths. Fine, thick, straight, curly. Perfect for smoothing flyaways, straightening sections, or restyling on the go.</p></details>\n        <details><summary>How long does it take to heat up?</summary><p>About 30 seconds. Turn it on, wait a moment, and you're ready to style.</p></details>\n        <details><summary>What's your return policy?</summary><p>14-day money-back guarantee. If you're not glowing, send it back for a full refund. No questions.</p></details>\n      {% when 'make-up-brush-cleaner' %}\n        <details><summary>How long does it take to clean a brush?</summary><p>About 60 seconds per brush. A full kit takes under 5 minutes.</p></details>\n        <details><summary>Will it fit all my brushes?</summary><p>The silicone holders flex to grip any brush handle — slim eyeshadow detail brushes through fluffy powder brushes.</p></details>\n        <details><summary>What soap should I use?</summary><p>Any gentle brush cleanser or mild soap mixed with water. Avoid harsh detergents — they're rough on the bristles.</p></details>\n        <details><summary>How long does the battery last?</summary><p>A full USB charge powers multiple full-kit cleaning sessions. Recharge with any USB cable.</p></details>\n        <details><summary>Will it damage my brushes?</summary><p>No — the gentle spin is far easier on bristles than scrubbing under hot water. Brushes last longer.</p></details>\n        <details><summary>What's your return policy?</summary><p>14-day money-back guarantee. If you're not glowing, send it back for a full refund. No questions.</p></details>\n      {% endcase %}\n    </div>\n  </section>\n\n  <!-- Final CTA -->\n  <section class=\"final\">\n    <h2>Ready to Glow?</h2>\n    <p>Join thousands of women who never leave home without their Glowly.</p>\n    <form action=\"/cart/add\" method=\"post\" enctype=\"multipart/form-data\" class=\"final-form\">\n      <input type=\"hidden\" name=\"id\" value=\"{{ product.selected_or_first_available_variant.id }}\">\n      <button type=\"submit\">Add to Bag — {{ product.price | money }}</button>\n    </form>\n    <div class=\"final-note\">FREE SHIPPING OVER $40 · 14-DAY RETURNS</div>\n  </section>\n\n</div>"
+      }
+    }
+  },
+  "order": [
+    "spacer_H6QL8Q",
+    "breadcrumbs",
+    "main-product",
+    "1662552569cce2536d",
+    "scrolling_text_ddLM8z",
+    "image_with_text_jfqMYG",
+    "scrolling_text_zgie3J",
+    "image_with_text_WcURLg",
+    "17765310812b7f3734",
+    "collapsible_content_GeM6CX",
+    "17765316853e0e4a41",
+    "text_with_icons_ELbXtb",
+    "product-recommendations",
+    "custom_liquid_pCABPd"
+  ]
+}
