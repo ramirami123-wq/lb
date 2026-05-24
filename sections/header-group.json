@@ -29,7 +29,7 @@
         "text_RyX9Gt"
       ],
       "custom_css": [
-        "* {background-color: #b88933;}"
+        "* {background-color: #f4c2c2; color:black;}"
       ],
       "settings": {
         "announcement_bar": true,
