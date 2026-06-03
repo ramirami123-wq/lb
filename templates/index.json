@@ -64,7 +64,6 @@
     },
     "featured_collection_iQwccK": {
       "type": "featured-collection",
-      "disabled": true,
       "name": "Featured collection",
       "settings": {
         "heading": "Featured Collection",
