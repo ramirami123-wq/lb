@@ -29,7 +29,7 @@
         "text_RyX9Gt"
       ],
       "custom_css": [
-        "* {background-color: #f4c2c2; color:black;}"
+        "* {background-color: #f4c2c2; color: black;}"
       ],
       "settings": {
         "announcement_bar": true,
@@ -44,7 +44,6 @@
     },
     "header-secondary-menu": {
       "type": "header-secondary-menu",
-      "disabled": true,
       "settings": {
         "secondary_menu": "",
         "show_language_switcher": false,
