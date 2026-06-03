@@ -69,7 +69,7 @@
         "heading": "Featured Collection",
         "marker_style": "style1",
         "description": "",
-        "collection": "custom-collection",
+        "collection": "frontpage",
         "display_type": "grid",
         "product_limit": 12,
         "columns_desktop": 4,
